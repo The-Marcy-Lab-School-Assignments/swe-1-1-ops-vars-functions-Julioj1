@@ -3,7 +3,6 @@
 const calculateArea = (width, height) => {
   return width * height;
 }
-console.log(calculateArea(5, 3));
 
 // TODO: Return true if the number is even, false if odd
 const isEven = (num) => {
@@ -13,22 +12,19 @@ const isEven = (num) => {
     return false;
   }
 }
-console.log(isEven(2));
 
-const convertToFahrenheit = (celsius) => {
+const convertToFahrenheit = (temp) => {
   // TODO: Convert celsius to fahrenheit using the formula: (celsius * 9/5) + 32
   let celsius = temp;
   let fahrenheit = (celsius * 9 / 5) + 32;
   return fahrenheit;
 };
-console.log(convertToFahrenheit(5));
 
 // String & Variable Functions
 const createGreeting = (name) => {
   // TODO: Return a greeting string like "Hello, [name]!"
   return `Hello, ${name}!`;
 };
-console.log(createGreeting(""));
 
 const getInitials = (firstName, lastName) => {
   // TODO: Return initials by taking first letter of each name
@@ -42,12 +38,11 @@ const getInitials = (firstName, lastName) => {
   }
   return firstLetter + secondLetter;
 };
-console.log(getInitials("Julio", "De la Cruz"));
+
 const formatPrice = (price) => {
   // TODO: Return price formatted as "$[price].00" (e.g., "$5.00")
   return `$${price}.00`;
 };
-console.log(formatPrice(10));
 
 // Function Logic Functions
 const getLarger = (num1, num2) => {
@@ -58,7 +53,6 @@ const getLarger = (num1, num2) => {
     return num2;
   }
 };
-console.log(getLarger(2, 1));
 
 const isValidAge = (age) => {
   // TODO: Return true if age is between 0 and 120, false otherwise
@@ -68,7 +62,6 @@ const isValidAge = (age) => {
     return false;
   }
 };
-console.log(isValidAge(120));
 
 module.exports = {
   calculateArea,
